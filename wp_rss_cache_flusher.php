@@ -4,7 +4,7 @@ Plugin Name: WP RSS Cache Flusher
 Plugin URI: http://github.com/aaronrussell/wp_rss_cache_flusher/
 Version: 0.1
 Author: <a href="http://www.aaronrussell.co.uk/">Aaron Russell</a>
-Description: WP RSS Cache Flusher - TD add description
+Description: WP RSS Cache Flusher is a simple plugin for flushing the Magpie RSS cache from WordPress' database.
 */
 
 /*
