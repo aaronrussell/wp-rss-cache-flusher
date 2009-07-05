@@ -29,4 +29,27 @@ jQuery(document).ready(function()
 			});
 		}
 	});
+	
+	jQuery('input.flush-all').click(function()
+	{
+	  var cacheIds = [];
+	  var tbody = jQuery('table.wp_rss_cache_flusher-table > tbody');
+	  jQuery('tr', tbody).each(function()
+	  {
+	    cacheIds.push(jQuery(this).children('td.flush').children('input').attr('rel'));
+	  });
+		var warning = 'Warning! This action cannot be undone.\nAre you sure you want to permanently flush everything in the RSS cache?';
+		if(confirm(warning, 'No', 'Yes'))
+		{
+			jQuery.post('/wp-content/plugins/wp_rss_cache_flusher/includes/prompt.flush.php', 'cache_ids='+cacheIds.join(','), function(txt)
+			{
+				if (txt == 'true')
+				{
+				  tbody.children('tr').remove();
+				  tbody.html('<tr><td colspan="5">The RSS Cache is empty</td></tr>');
+				}
+				else alert('Failed');
+			});
+		}
+	});
 });

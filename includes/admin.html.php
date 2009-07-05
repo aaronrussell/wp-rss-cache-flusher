@@ -20,6 +20,11 @@
 					<td class="flush"><input type="button" class="button-primary flush" rel="<?=$row->option_id;?>" value="Flush"></td>
 				</tr>
 			<?php endforeach; ?>
+			<?php if (sizeof($cache)<1): ?>
+				<tr>
+					<td colspan="5">The RSS Cache is empty</td>
+				</tr>
+			<?php endif; ?>
 			<tfoot>
 				<tr>
 					<td colspan="3">&nbsp;</td>

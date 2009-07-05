@@ -1,8 +1,8 @@
 <?php
 /*
 Plugin Name: WP RSS Cache Flusher
-Plugin URI: http://www.aaronrussell.co.uk/wordpress-plugins/wp-rss-cache-flusher/
-Version: 0.0.1b
+Plugin URI: http://github.com/aaronrussell/wp_rss_cache_flusher/
+Version: 0.1
 Author: <a href="http://www.aaronrussell.co.uk/">Aaron Russell</a>
 Description: WP RSS Cache Flusher - TD add description
 */
