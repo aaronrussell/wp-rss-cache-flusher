@@ -1,0 +1,30 @@
+.wp_rss_cache_flusher-box {
+	background:#DFDFDF url(../../../../../wp-admin/images/gray-grad.png) repeat-x 0 0;
+	border:1px solid #DFDFDF;
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+
+.wp_rss_cache_flusher-table {width:100%; border-collapse:collapse;}
+
+.wp_rss_cache_flusher-table thead th {text-align:left; padding:9px 6px; text-shadow:0 1px 0 #FFFFFF;}
+
+.wp_rss_cache_flusher-table tbody td {background:#fff;}
+.wp_rss_cache_flusher-table td {text-align:left; padding:6px; border-top:1px solid #DFDFDF;}
+
+.wp_rss_cache_flusher-table .timestamp {width:120px; padding-left:9px;}
+.wp_rss_cache_flusher-table .flush {padding-right:9px; text-align:right;}
+
+#wp_rss_cache_flusher-prompt {display:none;}
+
+#TB_ajaxWindowTitle {font-weight:bold;}
+
+#TB_window h2 , #TB_window h3 {padding:0px !important; margin-bottom:0px !important; line-height:normal !important;}
+#TB_window p {padding:0px !important;}
+#TB_window .date {font-family:Georgia,"Times New Roman","Bitstream Charter",Times,serif; color:#464646; margin-top:0px !important;}
+#TB_window div.wp_rss_cache_flusher-box {margin:18px 0px; padding:6px 9px;}
+#TB_window div.wp_rss_cache_flusher-box table {margin-top:6px; border-collapse:collapse; color:#464646;}
+#TB_window div.wp_rss_cache_flusher-box table th {width:120px;}
+#TB_window div.wp_rss_cache_flusher-box table th , #TB_window div.wp_rss_cache_flusher-box table td {vertical-align:top; padding:1px 0px;}
