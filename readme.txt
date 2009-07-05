@@ -1,12 +1,13 @@
 === WP RSS Cache Flusher ===
 
 Contributors: Aaron Russell
-URL: http://github.com/aaronrussell/wp_rss_cache_flusher/
+URL: http://github.com/aaronrussell/wp-rss-cache-flusher/
+Requires at least: 2.7
 Tested up to: 2.8
 Stable tag: 0.1
 Tags: rss, magpie, cache
 
-A simple WordPress plugin for flushing the Magpie RSS cache.
+WP RSS Cache Flusher is a simple plugin for flushing the Magpie RSS cache from WordPress' database.
 
 == Description ==
 

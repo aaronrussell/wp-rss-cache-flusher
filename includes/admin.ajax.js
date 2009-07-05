@@ -1,3 +1,5 @@
+var pluginPath = '/wp-content/plugins/wp-rss-cache-flusher';
+
 jQuery(document).ready(function()
 {
 	jQuery('input.inspect').click(function()
@@ -5,7 +7,7 @@ jQuery(document).ready(function()
 		var cacheTitle = jQuery(this).parent('td').siblings('td.title').text();
 		tb_show(cacheTitle, '#TB_inline?width=680&height=400&inlineId=wp_rss_cache_flusher-prompt');
 		var cacheId = jQuery(this).attr('rel');
-		jQuery.post('/wp-content/plugins/wp_rss_cache_flusher/includes/prompt.inspect.php', 'cache_id='+cacheId, function(txt)
+		jQuery.post(pluginPath+'/includes/prompt.inspect.php', 'cache_id='+cacheId, function(txt)
 		{
 			jQuery('#TB_ajaxContent').html(txt);
 		});
@@ -19,7 +21,7 @@ jQuery(document).ready(function()
 		var warning = 'Warning! This action cannot be undone.\nAre you sure you want to permanently flush the "'+cacheTitle+'" cache?';
 		if(confirm(warning, 'No', 'Yes'))
 		{
-			jQuery.post('/wp-content/plugins/wp_rss_cache_flusher/includes/prompt.flush.php', 'cache_id='+cacheId, function(txt)
+			jQuery.post(pluginPath+'/includes/prompt.flush.php', 'cache_id='+cacheId, function(txt)
 			{
 				if (txt == 'true')
 				{
@@ -41,7 +43,7 @@ jQuery(document).ready(function()
 		var warning = 'Warning! This action cannot be undone.\nAre you sure you want to permanently flush everything in the RSS cache?';
 		if(confirm(warning, 'No', 'Yes'))
 		{
-			jQuery.post('/wp-content/plugins/wp_rss_cache_flusher/includes/prompt.flush.php', 'cache_ids='+cacheIds.join(','), function(txt)
+			jQuery.post(pluginPath+'/includes/prompt.flush.php', 'cache_ids='+cacheIds.join(','), function(txt)
 			{
 				if (txt == 'true')
 				{
